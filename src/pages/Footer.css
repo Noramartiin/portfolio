@@ -1,0 +1,20 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 30px 0  30px 100px;
+    /* position: absolute; */
+    color: goldenrod;
+    user-select: none;
+}
+
+@media (max-width: 812px) {
+.footer{
+    font-size:15px;
+    position: sticky;
+    margin: 0;
+    width: 100%;
+}
+}

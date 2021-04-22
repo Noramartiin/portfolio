@@ -1,0 +1,71 @@
+.navbar-web {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  position: relative;
+}
+
+.butons {
+  border: 1px solid black;
+  user-select: none;
+  margin-right: -10px;
+  padding: 5px 80px 5px 60px;
+  background-color: rgba(22, 22, 22, 0.541);
+}
+
+.butons a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  padding: 8px 40px;
+}
+
+.butons a:hover {
+  background-color: rgba(53, 53, 53, 0.945);
+  color: white;
+}
+
+.logo-home {
+  margin: 30px 0 20px 160px;
+}
+
+.navbar-mobile {
+  visibility: hidden;
+  position: absolute;
+}
+
+@media (max-width: 1024px) {
+  .navbar-web {
+    visibility: hidden;
+    position: absolute;
+  }
+  .navbar-mobile {
+    visibility: visible;
+    position: relative;
+  }
+  .logo-home {
+    width: 60px;
+    margin: 10px 0 0 20px;
+  }
+  .mr-auto {
+    border: 2px solid goldenrod;
+    background-color: rgba(255, 255, 255, 0.801);
+    margin: 10px;
+  }
+  .mr-auto:active {
+    border: 3px solid goldenrod;
+  }
+  .mr-auto2 {
+    border: 0.5px solid rgba(0, 0, 0, 0.185);
+    background-color: rgba(255, 255, 255, 0.911);
+    margin: 8px 10px 0 50%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+  .mr-auto2:active {
+    background-color: rgba(221, 221, 221, 0.911);
+  }
+}

@@ -1,0 +1,177 @@
+.section-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .section-contact {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: -20px;
+  }
+}
+
+/* ALERT MESSAGE */
+.alert-success {
+  margin-left: 10%;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+}
+@media (max-width: 1200px) {
+  .alert-success {
+    margin: 100% 5% 0;
+    width: 90%;
+  }
+}
+/* MESSAGE FORM */
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.884);
+  border: 1px solid black;
+  width: 40%;
+}
+
+.left-side h3 {
+  color: goldenrod;
+  font-family: parisienne;
+  font-size: 60px;
+  text-align: center;
+  user-select: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-form div {
+  display: flex;
+}
+
+.contact-form div > input {
+  display: flex;
+  width: 100%;
+}
+
+.contact-form input,
+textarea {
+  margin: 5px 15px;
+  padding: 8px 12px;
+  width: 93%;
+}
+
+.message {
+  height: 150px;
+}
+
+.contact-form button {
+  margin: 12px 15px 12px;
+  padding: 8px 20px;
+  background-color: rgba(0, 0, 0, 0.856);
+  border: 1px solid goldenrod;
+  color: white;
+  font-size: 20px;
+}
+
+.contact-form button:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid goldenrod;
+}
+
+@media (max-width: 1200px) {
+  .left-side {
+    padding-top: 5px;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .left-side h3 {
+    font-size: 40px;
+  }
+
+  .contact-form input,
+  textarea {
+    padding: 2px 8px;
+  }
+
+  .message {
+    height: 100px;
+  }
+
+  .contact-form button {
+    margin: 5px 0 8px;
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+
+  .contact-form button:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid goldenrod;
+  }
+}
+
+/* CONTACT INFO */
+
+.right-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.856);
+  color: white;
+  padding: 30px 50px;
+  width: 30%;
+}
+
+.right-side h3 {
+  font-family: parisienne;
+  font-size: 60px;
+  text-align: center;
+  color: goldenrod;
+}
+
+.info-text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.each-item-contact {
+  display: flex;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  /* CONTACT INFO */
+
+  .right-side {
+    padding: 20px 30px;
+    width: 90%;
+  }
+
+  .right-side h3 {
+    font-size: 40px;
+  }
+
+  .info-text {
+    font-size: 12px;
+  }
+  .each-item-contact {
+    display: flex;
+    font-size: 12px;
+  }
+}

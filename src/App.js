@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+
+import React from "react";
+import { Switch, Route} from "react-router-dom";
+
+import Home from './pages/Home'
+import NavBar from "./pages/NavBar";
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
+import Footer from './pages/Footer'
+
+import BackgroundVideo from './images/Smoke-moving-mp4.mp4'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      {
+        <video className="background-video" muted autoPlay loop>
+          <source type="video/mp4" src={BackgroundVideo} />
+        </video>
+      }
+
+      <NavBar />
+      <Switch>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/portfolio" component={Projects} />
+        <Route exact path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
+      <Footer />
+
+    </React.Fragment>
   );
 }
 
