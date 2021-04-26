@@ -3,22 +3,24 @@
 import React from "react";
 import { Switch, Route} from "react-router-dom";
 
-import Home from './pages/Home'
-import NavBar from "./pages/NavBar";
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
-import NotFound from './pages/NotFound'
-import Footer from './pages/Footer'
+import Home from './components/Home'
+import NavBar from "./components/NavBar";
+import About from './components/About'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import NotFound from './components/NotFound'
+import Footer from './components/Footer'
 
-import BackgroundVideo from './images/Smoke-moving-mp4.mp4'
 
 function App() {
   return (
     <React.Fragment>
       {
         <video className="background-video" muted autoPlay loop>
-          <source type="video/mp4" src={BackgroundVideo} />
+          <source
+            type="video/mp4"
+            src="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618423744/Smoke-moving-mp4_vzyhlg.mp4"
+          />
         </video>
       }
 
@@ -31,7 +33,6 @@ function App() {
         <Route component={NotFound} />
       </Switch>
       <Footer />
-
     </React.Fragment>
   );
 }

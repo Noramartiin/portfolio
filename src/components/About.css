@@ -1,14 +1,15 @@
 /* TITLES */
 .section-title {
-  text-align: center;
-  margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.966);
-  border: 2px solid goldenrod;
-  width: 30%;
-  font-size: 35px;
-  padding: 5px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.856);
+  border: 1px solid goldenrod;
+  width: 26%;
+  font-size: 25px;
+  padding: 5px 30px;
   user-select: none;
+  margin-left: -20px;
 }
+
 /* SECTION STRUCTURE */
 .section {
   display: flex;
@@ -19,8 +20,9 @@
 @media (max-width: 1200px) {
   /* TITLES */
   .section-title {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: -5px;
+    margin-bottom: 20px;
     width: 200px;
     font-size: 20px;
     border: 1px solid goldenrod;
@@ -32,36 +34,37 @@
   display: flex;
   align-items: flex-end;
   text-align: center;
+  margin: 12px 50px 10px;
 }
 
 .presentation {
   background-color: rgba(255, 255, 255, 0.966);
   border: 0.5px solid black;
   margin-right: 100px;
-  padding: 30px 40px;
+  padding: 15px 12px;
   color: black;
 }
 
 #title {
   color: goldenrod;
-  font-size: 45px;
+  font-size: 35px;
   font-family: raleway;
 }
 
 #profession {
   font-family: parisienne;
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 20px;
 }
 .text {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px;
 }
 
 .video-presentation {
   visibility: visible;
   position: relative;
-  margin-top: -150px;
+  margin-right: 80px;
 }
 
 @media (max-width: 1200px) {
@@ -77,14 +80,16 @@
 
   #title {
     font-size: 25px;
+    margin-top: 15px;
   }
 
   #profession {
     font-size: 25px;
+    margin-top: 5px;
   }
   .text {
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .video-presentation {
@@ -99,12 +104,12 @@
   display: flex;
   justify-content: space-evenly;
   color: black;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .each-item {
   display: flex;
-  font-size:18px;
+  font-size: 16px;
 }
 
 .each-item p {
@@ -145,7 +150,6 @@
 
 @media (max-width: 1200px) {
   /* MOBILE-VIDEO */
-
   .video-presentation-mobile {
     visibility: visible;
     position: relative;
@@ -158,53 +162,47 @@
   }
 }
 
-
 /* LINKS */
 .links-container {
-  margin: 50px 0 100px;
+  margin: 10px 0 8px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .links {
   color: black;
-  border: 2px solid goldenrod;
-  background-color: white;
-  margin: 0 80px;
-  padding: 5px 20px;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .links:hover {
-  background-color: rgba(0, 0, 0, 0.671);
-  color: white;
+  color: goldenrod;
 }
 
 @media (max-width: 1200px) {
   /* LINKS */
   .links-container {
-    margin: 20px 0px 10px;
+    margin: 0px 0px 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
   .links {
-    margin: 10px 40px;
-    border: 1px solid goldenrod;
+    margin-top: 10px;
     font-size: 15px;
     background-color: rgba(255, 255, 255, 0.774);
   }
 
   .links:active {
-    background-color: rgba(0, 0, 0, 0.671);
-    color: white;
+    color: goldenrod;
   }
 }
 
 /* GET TO KNOW ME BETTER */
 .about {
-  margin: 0 250px 100px;
+  margin: 50px 250px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,16 +212,16 @@
 .about-title {
   color: goldenrod;
   font-family: parisienne;
-  font-size: 90px;
+  font-size: 60px;
   margin-bottom: 10px;
 }
 
 .about-text {
   background-color: rgba(0, 0, 0, 0.856);
   color: white;
-  font-size: 20px;
-  padding: 60px 80px 0;
-  border: 3px solid goldenrod;
+  font-size: 16px;
+  padding: 40px 50px 0;
+  border: 2px solid goldenrod;
 }
 
 .about-text h5 {
@@ -238,7 +236,7 @@
   color: black;
   padding: 10px 50px;
   margin: 30px 80px 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .button-container {
@@ -305,7 +303,7 @@
 
 /* TOOLS */
 .my-technologies {
-  margin-bottom: 50px;
+  margin: 50px 0 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -315,15 +313,14 @@
 .my-technologies h3 {
   color: goldenrod;
   font-family: parisienne;
-  font-size: 90px;
+  font-size: 60px;
   margin-bottom: 0px;
   text-align: center;
   user-select: none;
 }
 
 .my-technologies p {
-  font-size: 28px;
-  /* font-family: parisienne; */
+  font-size: 23px;
   color: black;
   margin: 10px 60px 40px;
   text-align: center;

@@ -21,11 +21,11 @@
   flex-direction: column;
   align-items: center;
   background-color: rgba(22, 22, 22, 0.541);
-  padding: 60px 70px 30px;
+  padding: 40px 50px 20px;
 }
 
 .name {
-  font-size: 100px;
+  font-size: 80px;
   font-family: raleway;
   color: goldenrod;
   margin-top: 20px;
@@ -33,13 +33,13 @@
 }
 
 .img {
-  width: 300px;
+  width: 250px;
 }
 
 .msg {
-  font-size: 50px;
+  font-size: 32px;
   color: black;
-  margin: 50px 0 0;
+  margin: 30px 0 0;
   font-family: raleway;
   user-select: none;
   position: relative;
@@ -79,7 +79,7 @@
     position: relative;
     font-size: 17px;
     color: black;
-    margin: 150px 0 0;
+    margin: 150px 0 10px;
     text-align: center;
     user-select: none;
   }

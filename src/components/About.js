@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
 import "./About.css";
+
+import '../'
+
 import Slide from "react-reveal/Slide";
 import Reveal from "react-reveal/Reveal";
 
@@ -20,7 +23,7 @@ export default class About extends Component {
     return (
       <div>
         <Slide left>
-          <h1 className="section-title">About me</h1>
+          <h1 className="section-title">About me </h1>
         </Slide>
 
         <Reveal bottom>
@@ -82,6 +85,24 @@ export default class About extends Component {
                     </div>
                   </div>
                 </div>
+                {/* LINKS */}
+                <div className="links-container">
+                  <a
+                    href="https://drive.google.com/file/d/1mmpLtstdXMZHPxGdQYk3Y_WH7rtnL0K4/view?usp=sharing"
+                    className="links"
+                  >
+                    LINK TO CV
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/nora-martin-velasco/"
+                    className="links"
+                  >
+                    LINK TO LINKED IN
+                  </a>
+                  <a href="https://github.com/Noramartiin" className="links">
+                    LINK TO GITHUB
+                  </a>
+                </div>
               </div>
 
               {/* WEB-VIDEO */}
@@ -89,29 +110,10 @@ export default class About extends Component {
                 url="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618405655/video-dcha_nprryn.mov"
                 playing
                 muted
-                height="50%"
-                width="60%"
+                height="20%"
+                width="30%"
                 className="video-presentation"
               />
-            </div>
-
-            {/* LINKS */}
-            <div className="links-container">
-              <a
-                href="https://drive.google.com/file/d/10mKHxcDtKXMHIna9Yik76jFpsRt4seU2/view?usp=sharing"
-                className="links"
-              >
-                LINK TO CV
-              </a>
-              <a
-                href="https://www.linkedin.com/in/nora-martin-velasco/"
-                className="links"
-              >
-                LINK TO LINKED IN
-              </a>
-              <a href="https://github.com/Noramartiin" className="links">
-                LINK TO GITHUB
-              </a>
             </div>
 
             {/* ABOUT */}
@@ -120,7 +122,7 @@ export default class About extends Component {
               <div className="about-text">
                 <p>
                   I’m an Advertisement, Events and Protocol studies lover who
-                  have recently discovered programming. Now I'm eager to dive
+                  has recently discovered programming. Now I'm eager to dive
                   myself into new projects where I can keep improving, keep
                   challenging myself and learn something new everyday.
                 </p>
@@ -152,22 +154,39 @@ export default class About extends Component {
                     </p>
                     <h5>What can I bring to your company ?</h5>
                     <p>
-                      As my work in Communication & Events I've discovered two
-                      main things:
+                      As a new hard-working programmer who wants to grow in the
+                      profession, I can bring attitude, disposition and desire
+                      to take over the world.
+                      <strong>
+                        But the most important thing is that I would bring
+                        freshness to the team, good vibes, sympathy and a more
+                        creative way of seeing the world of code.
+                      </strong>
                     </p>
                     <p>
-                      The first one is that as a part of a team you would have
-                      to work with too different people with different
-                      backgrounds, and this is the best thing that can happen to
-                      you because this allows you to explore and learn from
-                      other thinking processes
+                      Apart from coding, I used to work in Communication &
+                      Events what taught me a lot about human thoughts and
+                      behaviors. I learned that as a part of a team you would
+                      have to work with too different people and its different
+                      ways of dealing with errors. This allows you to explore
+                      and learn from other thinking processes.
                     </p>
                     <p>
-                      The second one is that when you perform an event or
-                      specific Marketing strategy, the people usually forgets
-                      about the content, the memory that remains on them are the
-                      experiences, and the way that these made them feel. So
-                      that's why the most important thing is to create something
+                      Apart from that, the most important lesson learned was
+                      that when you perform an event, the the human mind tends
+                      to forget the content and the specific things, the memory
+                      that remains on them are the experiences, and the way that
+                      these made them feel.
+                    </p>
+                    <p>
+                      Those of you who are reading this, probably would forget
+                      the content of this site the next day, the only thing you
+                      will remember will be wheter the feeling when browsing it
+                      was positive or not.
+                    </p>
+                    <p className="quote">
+                      That's why the most important thing when creating an
+                      event, an app or a webpage is to create something
                       shocking, unexpected and unforgettable for the users.
                     </p>
                   </div>

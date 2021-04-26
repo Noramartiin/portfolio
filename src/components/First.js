@@ -4,7 +4,6 @@ import './First.css'
 import Zoom from "react-reveal/Zoom";
 
 export default class First extends Component {
-
 changeThis() {
   window.location.href = "/home"
 }

@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import config from "../config";
+import axios from "axios";
 import "./Contact.css";
+
 import Slide from "react-reveal/Slide";
 import Reveal from "react-reveal/Reveal";
 import Fade from "react-reveal/Fade";
-import config from "../config";
-import axios from "axios";
+
 import Alert from "@material-ui/lab/Alert";
 import AlertTitle from "@material-ui/lab/AlertTitle";
 
@@ -65,7 +67,7 @@ export default class Contact extends Component {
                   <h4>Your message has been send</h4>
                 </AlertTitle>
                 <h5>
-                  I will contact you as soon as possible.{" "}
+                  I will contact you as soon as possible.
                   <strong>Thank you!</strong>
                 </h5>
               </Alert>
@@ -76,7 +78,6 @@ export default class Contact extends Component {
         {/* SECTION */}
         <Reveal bottom>
           <div className="section-contact">
-
             {/* MESSAGE */}
             <div className="left-side">
               <h3>Message me</h3>
@@ -112,7 +113,7 @@ export default class Contact extends Component {
               </form>
             </div>
 
-          {/* INFORMATION */}
+            {/* INFORMATION */}
             <div className="right-side">
               <div>
                 <h3>Contact Info</h3>
@@ -121,7 +122,8 @@ export default class Contact extends Component {
               <div className="info-text">
                 <p>
                   Always ready for new challenges and currently looking for
-                  opportunities.<br/> Feel free to contact me!
+                  opportunities.
+                  <br /> Feel free to contact me!
                 </p>
               </div>
 
@@ -148,7 +150,6 @@ export default class Contact extends Component {
                 </div>
               </div>
             </div>
-             
           </div>
         </Reveal>
       </div>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Projects.css";
+
 import Slide from "react-reveal/Slide";
 import Reveal from "react-reveal/Reveal";
 
@@ -8,23 +9,27 @@ export default class Projects extends Component {
     display1: false,
     display2: false,
     display3: false,
-    button: "See the Image...",
+    button1: "See the Image...",
+    button2: "See the Image...",
+    button3: "See the Image...",
   };
 
   handleDisplayImage1 = () => {
     !this.state.display1
-      ? this.setState({ display1: true, button: "X" })
-      : this.setState({ display1: false, button: "See the Image..." });
+      ? this.setState({ display1: true, button1: "X" })
+      : this.setState({ display1: false, button1: "See the Image..." });
   };
+
   handleDisplayImage2 = () => {
     !this.state.display2
-      ? this.setState({ display2: true, button: "X" })
-      : this.setState({ display2: false, button: "See the Image..." });
+      ? this.setState({ display2: true, button2: "X" })
+      : this.setState({ display2: false, button2: "See the Image..." });
   };
+
   handleDisplayImage3 = () => {
     !this.state.display3
-      ? this.setState({ display3: true, button: "X" })
-      : this.setState({ display3: false, button: "See the Image..." });
+      ? this.setState({ display3: true, button3: "X" })
+      : this.setState({ display3: false, button3: "See the Image..." });
   };
 
   render() {
@@ -92,7 +97,7 @@ export default class Projects extends Component {
                       className="see-image-button"
                       onClick={this.handleDisplayImage1}
                     >
-                      {this.state.button}
+                      {this.state.button1}
                     </button>
                   </div>
                 </div>
@@ -124,7 +129,7 @@ export default class Projects extends Component {
                     <div>
                       <h3>Global NGO</h3>
                       <h5>FullStack Responsive application</h5>
-                      <p>
+                      <p className="card-text">
                         This app that gathers NGOs worldwide is a portal where
                         you can manage your NGOs allowing you to create or
                         modify them your
@@ -147,7 +152,7 @@ export default class Projects extends Component {
                       className="see-image-button"
                       onClick={this.handleDisplayImage2}
                     >
-                      {this.state.button}
+                      {this.state.button2}
                     </button>
                   </div>
                 </div>
@@ -178,14 +183,12 @@ export default class Projects extends Component {
                   ) : (
                     <div>
                       <h3>Save The Hobbits</h3>
-                      <h5>
-                        Pure Vanilla JavaScript game made with canvas and based
-                        on the Lord of the Rings.
-                      </h5>
+                      <h5>Vanilla JavaScript game made with canvas.</h5>
                       <p className="card-text">
-                        First game after studying two weeks of JavaScript. The
-                        user must kill the orcs throwing arrows to increase
-                        score aboiding killing the hobbits.
+                        First game after studying two weeks of JavaScript. Set
+                        in the Lord of the Rings, the user must kill the orcs
+                        throwing arrows to increase score aboiding killing the
+                        hobbits.
                       </p>
 
                       <div className="links-projects">
@@ -206,7 +209,7 @@ export default class Projects extends Component {
                       className="see-image-button"
                       onClick={this.handleDisplayImage3}
                     >
-                      {this.state.button}
+                      {this.state.button3}
                     </button>
                   </div>
                 </div>

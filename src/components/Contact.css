@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 50px;
+  margin-bottom: -10px;
+  margin-top: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -11,8 +12,8 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
-    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-top: 32px;
   }
 }
 
@@ -24,12 +25,14 @@
   z-index: 1;
   width: 40%;
 }
+
 @media (max-width: 1200px) {
   .alert-success {
     margin: 100% 5% 0;
     width: 90%;
   }
 }
+
 /* MESSAGE FORM */
 
 .left-side {
@@ -45,7 +48,7 @@
 .left-side h3 {
   color: goldenrod;
   font-family: parisienne;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   user-select: none;
 }
@@ -69,21 +72,22 @@
 .contact-form input,
 textarea {
   margin: 5px 15px;
-  padding: 8px 12px;
+  padding: 3px 8px;
   width: 93%;
+  font-size: 15px;
 }
 
 .message {
-  height: 150px;
+  height: 120px;
 }
 
 .contact-form button {
-  margin: 12px 15px 12px;
-  padding: 8px 20px;
+  margin: 8px 15px 10px;
+  padding: 4px 20px;
   background-color: rgba(0, 0, 0, 0.856);
   border: 1px solid goldenrod;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .contact-form button:hover {
@@ -93,6 +97,7 @@ textarea {
 }
 
 @media (max-width: 1200px) {
+  /* MESSAGE FORM */
   .left-side {
     padding-top: 5px;
     width: 90%;
@@ -140,24 +145,22 @@ textarea {
 
 .right-side h3 {
   font-family: parisienne;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   color: goldenrod;
 }
 
 .info-text {
-  font-size: 20px;
-  text-align: center;
+  font-size: 15px;
 }
 
 .each-item-contact {
   display: flex;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
   /* CONTACT INFO */
-
   .right-side {
     padding: 20px 30px;
     width: 90%;

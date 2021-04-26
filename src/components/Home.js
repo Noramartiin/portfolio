@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './Home.css'
+
 import Zoom from "react-reveal/Zoom";
-import Bounce from "react-reveal/Bounce";
 
 export default class Home extends Component {
 

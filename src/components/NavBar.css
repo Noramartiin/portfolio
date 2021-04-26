@@ -1,3 +1,4 @@
+/* NAVBAR FOR THE WEB */
 .navbar-web {
   display: flex;
   align-items: center;
@@ -6,20 +7,30 @@
   position: relative;
 }
 
-.butons {
+.logo-home {
+  margin: 30px 0 20px 160px;
+}
+
+/* PAGES */
+.navbar-right-side {
+  display: flex;
+  align-items: center;
   border: 1px solid black;
   user-select: none;
   margin-right: -10px;
-  padding: 5px 80px 5px 60px;
   background-color: rgba(22, 22, 22, 0.541);
+}
+
+.butons {
+  padding: 5px 0px 5px 20px;
 }
 
 .butons a {
   width: 100%;
   text-decoration: none;
   color: white;
-  font-size: 30px;
-  padding: 8px 40px;
+  font-size: 20px;
+  padding: 8px 13px;
 }
 
 .butons a:hover {
@@ -27,8 +38,12 @@
   color: white;
 }
 
-.logo-home {
-  margin: 30px 0 20px 160px;
+.nabvar-links {
+  margin: 5px 30px 5px 0;
+}
+
+.nabvar-links a {
+  padding: 5px 0 5px 20px;
 }
 
 .navbar-mobile {
@@ -36,27 +51,33 @@
   position: absolute;
 }
 
+/* NAVBAR FOR MOBILE DEVICES */
 @media (max-width: 1024px) {
   .navbar-web {
     visibility: hidden;
     position: absolute;
   }
+
   .navbar-mobile {
     visibility: visible;
     position: relative;
   }
+
   .logo-home {
     width: 60px;
     margin: 10px 0 0 20px;
   }
+  /* MENU */
   .mr-auto {
     border: 2px solid goldenrod;
     background-color: rgba(255, 255, 255, 0.801);
-    margin: 10px;
+    margin-right: 10px;
   }
+
   .mr-auto:active {
     border: 3px solid goldenrod;
   }
+
   .mr-auto2 {
     border: 0.5px solid rgba(0, 0, 0, 0.185);
     background-color: rgba(255, 255, 255, 0.911);
@@ -65,7 +86,18 @@
     color: black;
     font-weight: bold;
   }
+
   .mr-auto2:active {
     background-color: rgba(221, 221, 221, 0.911);
+  }
+
+  /* SOCIAL MEDIA */
+  .nabvar-links-mobile {
+    display: flex;
+    align-items: center;
+    margin-right: -140px;
+  }
+  .nabvar-links-mobile a {
+    padding-right: 5px;
   }
 }
