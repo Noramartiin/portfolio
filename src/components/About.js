@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import ReactPlayer from "react-player";
 import "./About.css";
 
-import '../'
+import ReactPlayer from "react-player";
 
 import Slide from "react-reveal/Slide";
 import Reveal from "react-reveal/Reveal";
@@ -31,15 +30,31 @@ export default class About extends Component {
             <div className="container">
               {/* MY PRESENTATION */}
               <div className="presentation">
-                {/* MOBILE-VIDEO */}
-                <ReactPlayer
+                {/* MOBILE-PERSONAL-IMAGE */}
+                {/* <ReactPlayer
                   url="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618405655/video-dcha_nprryn.mov"
                   playing
                   muted
                   height="100%"
-                  width="90%"
+                  width="70%"
                   className="video-presentation-mobile"
+                /> */}
+
+                <img
+                  src="https://res.cloudinary.com/dja8ksmf0/image/upload/v1619541750/Nora_gnclb3.jpg"
+                  alt="my personal photo"
+                  className="mobile-img"
                 />
+
+                {/* <video
+                  src="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618405655/video-dcha_nprryn.mov"
+                  playsInline
+                  // webkit-playsinline
+                  className="video-presentation-mobile"
+                  muted
+                  autoPlay
+                /> */}
+
                 <h2 id="title">Who am I?</h2>
                 <h2 id="profession">
                   A Web Developer, Publicist & Event Director
@@ -110,8 +125,8 @@ export default class About extends Component {
                 url="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618405655/video-dcha_nprryn.mov"
                 playing
                 muted
-                height="20%"
-                width="30%"
+                height="35%"
+                width="35%"
                 className="video-presentation"
               />
             </div>

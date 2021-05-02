@@ -9,7 +9,7 @@
 @media (max-width: 1200px) {
   .section-contact {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
@@ -20,6 +20,7 @@
 /* ALERT MESSAGE */
 .alert-success {
   margin-left: 10%;
+  margin-top: 30px;
   border: 1px solid black;
   position: absolute;
   z-index: 1;
@@ -28,8 +29,16 @@
 
 @media (max-width: 1200px) {
   .alert-success {
-    margin: 100% 5% 0;
-    width: 90%;
+    margin: 10% 10% 0;
+    width: 80%;
+    /* height: 14%; */
+    padding:0;
+  }
+    .alert-success h4{
+    font-size: 16px;
+  }
+    .alert-success h5{
+    font-size: 15px;
   }
 }
 
@@ -39,7 +48,7 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding-top: 10px;
+  padding-top: 5px;
   background-color: rgba(255, 255, 255, 0.884);
   border: 1px solid black;
   width: 40%;
@@ -72,27 +81,27 @@
 .contact-form input,
 textarea {
   margin: 5px 15px;
-  padding: 3px 8px;
+  padding: 0px 5px;
   width: 93%;
   font-size: 15px;
 }
 
 .message {
-  height: 120px;
+  height: 100px;
 }
 
 .contact-form button {
   margin: 8px 15px 10px;
   padding: 4px 20px;
-  background-color: rgba(0, 0, 0, 0.856);
+  background-color: white;
   border: 1px solid goldenrod;
-  color: white;
+  color: goldenrod;
   font-size: 16px;
 }
 
 .contact-form button:hover {
-  background-color: whitesmoke;
-  color: black;
+  background-color: rgba(218, 165, 32, 0.849);
+  color: white;
   border: 1px solid goldenrod;
 }
 
@@ -101,7 +110,9 @@ textarea {
   .left-side {
     padding-top: 5px;
     width: 90%;
-    margin-top: 20px;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.884);
+    border: none;
   }
 
   .left-side h3 {
@@ -111,6 +122,8 @@ textarea {
   .contact-form input,
   textarea {
     padding: 2px 8px;
+    font-size: 12px;
+    margin: 4px 10px;
   }
 
   .message {
@@ -120,12 +133,15 @@ textarea {
   .contact-form button {
     margin: 5px 0 8px;
     padding: 8px 20px;
-    font-size: 15px;
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid goldenrod;
+    color: goldenrod;
   }
 
   .contact-form button:hover {
-    background-color: whitesmoke;
-    color: black;
+     background-color: rgba(218, 165, 32, 0.849);
+    color: white;
     border: 1px solid goldenrod;
   }
 }
@@ -139,7 +155,7 @@ textarea {
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.856);
   color: white;
-  padding: 30px 50px;
+  padding: 15px 30px 5px;
   width: 30%;
 }
 
@@ -147,7 +163,7 @@ textarea {
   font-family: parisienne;
   font-size: 50px;
   text-align: center;
-  color: goldenrod;
+  color: white;
 }
 
 .info-text {
@@ -162,8 +178,9 @@ textarea {
 @media (max-width: 1200px) {
   /* CONTACT INFO */
   .right-side {
-    padding: 20px 30px;
+    padding: 10px 15px;
     width: 90%;
+    margin-top: 30px;
   }
 
   .right-side h3 {

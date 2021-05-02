@@ -3,6 +3,7 @@ import "./Projects.css";
 
 import Slide from "react-reveal/Slide";
 import Reveal from "react-reveal/Reveal";
+import Zoom from "react-reveal/Zoom";
 
 export default class Projects extends Component {
   state = {
@@ -56,7 +57,7 @@ export default class Projects extends Component {
                 {/* Backside of the card */}
                 <div className="card-back-side">
                   {this.state.display1 ? (
-                    <Reveal bottom>
+                    <Zoom>
                       <div>
                         <img
                           src="https://res.cloudinary.com/dja8ksmf0/image/upload/v1618573714/Bon_Appeteat_pmfoo2.png"
@@ -64,7 +65,7 @@ export default class Projects extends Component {
                           alt="Bon Appeteat"
                         ></img>
                       </div>
-                    </Reveal>
+                    </Zoom>
                   ) : (
                     <div>
                       <h3>Bon Appeteat</h3>
@@ -116,7 +117,7 @@ export default class Projects extends Component {
                 {/* Backside of the card */}
                 <div className="card-back-side">
                   {this.state.display2 ? (
-                    <Reveal bottom>
+                    <Zoom>
                       <div>
                         <img
                           src="https://res.cloudinary.com/dja8ksmf0/image/upload/v1618573256/Global_NGO_axv7lc.png"
@@ -124,7 +125,7 @@ export default class Projects extends Component {
                           alt="Global NGO"
                         ></img>
                       </div>
-                    </Reveal>
+                    </Zoom>
                   ) : (
                     <div>
                       <h3>Global NGO</h3>
@@ -171,7 +172,7 @@ export default class Projects extends Component {
                 {/* Backside of the card */}
                 <div className="card-back-side">
                   {this.state.display3 ? (
-                    <Reveal bottom>
+                    <Zoom>
                       <div>
                         <img
                           src="https://res.cloudinary.com/dja8ksmf0/image/upload/v1618573872/Save_The_Hobbits_odcggj.png"
@@ -179,7 +180,7 @@ export default class Projects extends Component {
                           alt="Save The Hobbits"
                         ></img>
                       </div>
-                    </Reveal>
+                    </Zoom>
                   ) : (
                     <div>
                       <h3>Save The Hobbits</h3>

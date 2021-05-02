@@ -3,24 +3,45 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 500px;
 }
 
 .not-found-text {
   background-color: rgba(0, 0, 0, 0.671);
   color: white;
   border: 1px solid goldenrod;
-  width: 50%;
-  height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20px 40px;
+  padding: 0 50px;
+  margin-bottom: 5%;
 }
+
 .not-found-text h1 {
-  font-size: 300px;
+  font-size: 230px;
+  margin-top: -30px;
 }
+
 .not-found-text p {
+  margin-top: -20px;
   font-size: 80px;
+}
+
+@media (max-width: 700px) {
+  .not-found-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px 5px;
+    margin-top: 30%;
+    margin-bottom: 50%;
+  }
+  .not-found-text h1 {
+    font-size: 100px;
+  }
+  .not-found-text p {
+    font-size: 30px;
+  }
 }

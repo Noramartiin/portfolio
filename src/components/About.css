@@ -40,7 +40,7 @@
 .presentation {
   background-color: rgba(255, 255, 255, 0.966);
   border: 0.5px solid black;
-  margin-right: 100px;
+  margin-right: 20px;
   padding: 15px 12px;
   color: black;
 }
@@ -54,17 +54,15 @@
 #profession {
   font-family: parisienne;
   font-size: 30px;
-  margin-top: 20px;
 }
 .text {
   font-size: 16px;
-  margin-top: 20px;
 }
 
 .video-presentation {
   visibility: visible;
   position: relative;
-  margin-right: 80px;
+  margin-top: -30px;
 }
 
 @media (max-width: 1200px) {
@@ -104,7 +102,6 @@
   display: flex;
   justify-content: space-evenly;
   color: black;
-  margin-top: 20px;
 }
 
 .each-item {
@@ -141,30 +138,29 @@
   }
 }
 
-/* MOBILE-VIDEO */
+/* MOBILE-PERSONAL-IMAGE */
 
-.video-presentation-mobile {
+.mobile-img {
   visibility: hidden;
   position: absolute;
 }
 
 @media (max-width: 1200px) {
-  /* MOBILE-VIDEO */
-  .video-presentation-mobile {
+  /* MOBILE-PERSONAL-IMAGE */
+  .mobile-img {
     visibility: visible;
     position: relative;
-    width: 100%;
     margin-top: 20px;
     border: 1px solid goldenrod;
-    padding: 10px;
+    width: 70%;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
   }
 }
 
 /* LINKS */
 .links-container {
-  margin: 10px 0 8px;
+  /* margin-top: 0; */
   display: flex;
   justify-content: space-evenly;
 }
@@ -264,6 +260,7 @@
   .about-title {
     font-size: 35px;
     margin: 30px 0 20px;
+    text-align: center;
   }
 
   .about-text {
