@@ -30,30 +30,13 @@ export default class About extends Component {
             <div className="container">
               {/* MY PRESENTATION */}
               <div className="presentation">
+              
                 {/* MOBILE-PERSONAL-IMAGE */}
-                {/* <ReactPlayer
-                  url="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618405655/video-dcha_nprryn.mov"
-                  playing
-                  muted
-                  height="100%"
-                  width="70%"
-                  className="video-presentation-mobile"
-                /> */}
-
                 <img
                   src="https://res.cloudinary.com/dja8ksmf0/image/upload/v1619541750/Nora_gnclb3.jpg"
                   alt="my personal photo"
                   className="mobile-img"
                 />
-
-                {/* <video
-                  src="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618405655/video-dcha_nprryn.mov"
-                  playsInline
-                  // webkit-playsinline
-                  className="video-presentation-mobile"
-                  muted
-                  autoPlay
-                /> */}
 
                 <h2 id="title">Who am I?</h2>
                 <h2 id="profession">
@@ -103,7 +86,7 @@ export default class About extends Component {
                 {/* LINKS */}
                 <div className="links-container">
                   <a
-                    href="https://drive.google.com/file/d/1mmpLtstdXMZHPxGdQYk3Y_WH7rtnL0K4/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1bOiI0MtfgkZi82IOnRW5sPhin2yRJ8kg/view?usp=sharing"
                     className="links"
                   >
                     LINK TO CV
@@ -125,8 +108,8 @@ export default class About extends Component {
                 url="https://res.cloudinary.com/dja8ksmf0/video/upload/v1618405655/video-dcha_nprryn.mov"
                 playing
                 muted
-                height="35%"
-                width="35%"
+                height="30%"
+                width="30%"
                 className="video-presentation"
               />
             </div>

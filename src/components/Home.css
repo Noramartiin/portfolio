@@ -40,19 +40,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2% 0;  
 }
 
 #presentation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(22, 22, 22, 0.541);
-  padding: 40px 50px 20px;
-  margin-top: -20px;
+  background-color: rgba(22, 22, 22, 0.699);
+  padding: 40px 60px 20px;
 }
 
 .name {
-  font-size: 80px;
+  font-size: 60px;
   font-family: raleway;
   color: goldenrod;
   margin-top: 20px;
@@ -60,16 +60,20 @@
 }
 
 .img {
-  width: 250px;
+  width: 35%;
 }
 
-.msg {
-  font-size: 26px;
-  color: black;
-  margin: 20px 0 0;
-  font-family: raleway;
+.msg h1{
+  font-size: 30px;
+  color: white;
   user-select: none;
   position: relative;
+}
+
+.hr{
+  color: white;
+  height: 5px;
+  margin-bottom: 20px;
 }
 
 .msg-mobile {
@@ -79,11 +83,9 @@
 
 @media (max-width: 1200px) {
   #presentation {
-    width: 80%;
-    height: 300px;
     background-color: rgba(22, 22, 22, 0.541);
-    padding: 40px 0 10px;
-    margin-top: 10%;
+    padding: 40px 20px 20px;
+    margin: 5% 0 50px;
   }
 
   .img {
@@ -95,20 +97,21 @@
     font-family: raleway;
     color: goldenrod;
     user-select: none;
+    
   }
 
   .msg {
     visibility: hidden;
     position: absolute;
   }
+
   .msg-mobile {
     visibility: visible;
     position: relative;
     font-size: 16px;
-    color: black;
-    margin-top: 20%;
-    margin-bottom: 2%;
+    color: white;
     text-align: center;
     user-select: none;
+    margin: 0;
   }
 }

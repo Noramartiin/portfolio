@@ -33,7 +33,8 @@
   padding: 8px 13px;
 }
 
-.butons a:hover {
+.butons a:hover,
+.nabvar-links a:hover {
   background-color: rgba(53, 53, 53, 0.945);
   color: white;
 }
@@ -43,7 +44,8 @@
 }
 
 .nabvar-links a {
-  padding: 5px 0 5px 20px;
+  margin: 0 0 0 20px;
+  padding: 10px;
 }
 
 .navbar-mobile {

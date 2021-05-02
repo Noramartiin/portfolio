@@ -10,10 +10,7 @@ export default class NavBar extends Component {
       <div>
         {/* NAVBAR FOR MOBILE DEVICES */}
         <div className="navbar-mobile">
-          <Navbar
-            collapseOnSelect
-            expand="lg"
-          >
+          <Navbar collapseOnSelect expand="lg">
             {/* LOGO/HOME */}
             <Navbar.Brand href="/">
               <img
@@ -45,6 +42,9 @@ export default class NavBar extends Component {
             />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav expand="true">
+                <Nav.Link className="mr-auto2" href="/">
+                  Home
+                </Nav.Link>
                 <Nav.Link className="mr-auto2" href="/about">
                   About
                 </Nav.Link>
@@ -59,7 +59,6 @@ export default class NavBar extends Component {
           </Navbar>
         </div>
 
-
         {/* NAVBAR FOR THE WEB */}
         <div className="navbar-web">
           {/* LOGO/HOME */}
@@ -73,6 +72,7 @@ export default class NavBar extends Component {
           {/* PAGES */}
           <div className="navbar-right-side">
             <div className="butons">
+              <a href="/">Home</a>
               <a href="/about">About</a>
               <a href="/portfolio">Projects</a>
               <a href="/contact">Contact</a>

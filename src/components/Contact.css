@@ -19,19 +19,29 @@
 
 /* ALERT MESSAGE */
 .alert-success {
-  margin-left: 10%;
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -7% 30%;
   border: 1px solid black;
   position: absolute;
   z-index: 1;
-  width: 40%;
+  width: 500px;
+  height: 100px;
+}
+
+.alert-success h4{
+  font-size: 18px;
+}
+
+.alert-success h5{
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
   .alert-success {
     margin: 10% 10% 0;
     width: 80%;
-    /* height: 14%; */
     padding:0;
   }
     .alert-success h4{
@@ -175,6 +185,25 @@ textarea {
   font-size: 15px;
 }
 
+.social-media-contact{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin:0 -20px;
+}
+
+.social-media-contact a, .social-media-contact p{
+  font-size: 15px;
+  
+  color: white;
+  margin: 0 10px 20px;
+}
+
+.social-media-contact a:hover{
+  color: goldenrod;
+}
+
 @media (max-width: 1200px) {
   /* CONTACT INFO */
   .right-side {
@@ -190,8 +219,14 @@ textarea {
   .info-text {
     font-size: 12px;
   }
+
   .each-item-contact {
     display: flex;
     font-size: 12px;
+  }
+
+  .social-media-contact a, .social-media-contact p{
+    font-size: 13px;
+    margin: 0 5px 10px;
   }
 }

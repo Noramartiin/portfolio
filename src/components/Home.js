@@ -19,33 +19,40 @@ export default class Home extends Component {
               ></img>
 
               <h1 className="name">NORA MARTIN</h1>
+              
+              {/* Web Version */}
+              <div className="msg">
+                <hr className="hr" />
+                <h1 >
+                  <Zoom top cascade>
+                    FullStack Developer | Publicist | Events Director
+                  </Zoom>
+                </h1>
+              </div>
+
+              {/* Mobile version */}
+
+              <div className="msg-mobile">
+                <hr className="hr" />
+                <Zoom top cascade>
+                  <h1>FullStack Developer</h1>
+                </Zoom>
+                <Zoom top cascade>
+                  <h1>Publicist</h1>
+                </Zoom>
+
+                <Zoom top cascade>
+                  <h1>Events Director</h1>
+                </Zoom>
+              </div>
+              
             </div>
           </Zoom>
 
-          {/* Web Version */}
           
-            <div>
-              <h1 className="msg">
-              <Zoom top cascade>
-                FullStack Developer | Publicist | Event Director
-              </Zoom>
-              </h1>
-            </div>
-          
-          {/* Mobile version */}
 
-          <div className="msg-mobile">
-            <Zoom top cascade>
-              <h1>FullStack Developer</h1>
-            </Zoom>
-            <Zoom top cascade>
-              <h1>Publicist</h1>
-            </Zoom>
 
-            <Zoom top cascade>
-              <h1>Event Director</h1>
-            </Zoom>
-          </div>
+
         </div>
       </div>
     );

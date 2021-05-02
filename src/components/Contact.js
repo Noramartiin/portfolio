@@ -149,6 +149,13 @@ export default class Contact extends Component {
                   <p>noramartiin96@gmail.com</p>
                 </div>
               </div>
+
+              <div className='social-media-contact'>
+                <a href="https://github.com/Noramartiin"> See my Github ! </a>
+                <p>or</p>
+                <a href="https://www.linkedin.com/in/nora-martin-velasco/"> Follow me on LinkedIn !</a>
+              </div>
+
             </div>
           </div>
         </Reveal>

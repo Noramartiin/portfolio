@@ -40,8 +40,8 @@
 .presentation {
   background-color: rgba(255, 255, 255, 0.966);
   border: 0.5px solid black;
-  margin-right: 20px;
-  padding: 15px 12px;
+  margin-right: 110px;
+  padding: 20px 12px;
   color: black;
 }
 
@@ -102,6 +102,7 @@
   display: flex;
   justify-content: space-evenly;
   color: black;
+  margin-bottom: 10px;
 }
 
 .each-item {
@@ -131,6 +132,7 @@
     justify-content: center;
     margin-top: 10px;
     margin-left: 20px;
+    margin-bottom: 0px;
   }
   .each-item p {
     font-size: 15px;
@@ -160,7 +162,6 @@
 
 /* LINKS */
 .links-container {
-  /* margin-top: 0; */
   display: flex;
   justify-content: space-evenly;
 }
@@ -170,6 +171,7 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .links:hover {
