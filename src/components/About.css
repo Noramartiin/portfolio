@@ -40,7 +40,7 @@
 .presentation {
   background-color: rgba(255, 255, 255, 0.966);
   border: 0.5px solid black;
-  margin-right: 110px;
+  margin-right: 50px;
   padding: 20px 12px;
   color: black;
 }
@@ -62,7 +62,7 @@
 .video-presentation {
   visibility: visible;
   position: relative;
-  margin-top: -30px;
+  margin-top: -50px;
 }
 
 @media (max-width: 1200px) {
