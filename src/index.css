@@ -2,22 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway:wght@100;200;300&display=swap');
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-    /* font-family: parisienne; */
-    font-family: raleway ;
-
+  font-family: raleway ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(./images/back-black.png);
-  background-repeat: no-repeat;
-  background-size: auto; */
-  
-
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
